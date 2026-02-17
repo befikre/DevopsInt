@@ -13,11 +13,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build Docker Image
-        run: docker build -t DevopsInt .
+        run: docker build -t devopst .
 
       - name: Run Docker Container
         run: |
-          docker run -d -p 80:80 DevopsInt
+          docker run -d -p 80:80 devopst
 
       - name: Check running containers
         run: docker ps
